@@ -1,0 +1,121 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "abab6cbb45e38bcbd81024dd500b571d",
+    "entities": [
+      {
+        "tableName": "git_hub_users",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`avatarUrl` TEXT, `eventsUrl` TEXT, `followersUrl` TEXT, `followingUrl` TEXT, `gistsUrl` TEXT, `gravatarId` TEXT, `htmlUrl` TEXT, `id` INTEGER NOT NULL, `login` TEXT, `nodeId` TEXT, `organizationsUrl` TEXT, `receivedEventsUrl` TEXT, `reposUrl` TEXT, `siteAdmin` INTEGER, `starredUrl` TEXT, `subscriptionsUrl` TEXT, `type` TEXT, `url` TEXT, `userViewType` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "avatarUrl",
+            "columnName": "avatarUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "eventsUrl",
+            "columnName": "eventsUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "followersUrl",
+            "columnName": "followersUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "followingUrl",
+            "columnName": "followingUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "gistsUrl",
+            "columnName": "gistsUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "gravatarId",
+            "columnName": "gravatarId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "htmlUrl",
+            "columnName": "htmlUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "login",
+            "columnName": "login",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "nodeId",
+            "columnName": "nodeId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "organizationsUrl",
+            "columnName": "organizationsUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "receivedEventsUrl",
+            "columnName": "receivedEventsUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "reposUrl",
+            "columnName": "reposUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "siteAdmin",
+            "columnName": "siteAdmin",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "starredUrl",
+            "columnName": "starredUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "subscriptionsUrl",
+            "columnName": "subscriptionsUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "userViewType",
+            "columnName": "userViewType",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'abab6cbb45e38bcbd81024dd500b571d')"
+    ]
+  }
+}
