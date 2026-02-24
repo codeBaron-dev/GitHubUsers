@@ -99,7 +99,7 @@ Pagination is handled using the `since` parameter, which returns users with IDs 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/GitHubUsers.git
+   git clone https://github.com/codeBaron-dev/GitHubUsers
    cd GitHubUsers
    ```
 
